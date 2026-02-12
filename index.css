@@ -1,0 +1,79 @@
+body{
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segon UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*body{
+    background: linear-gradient(135deg, #0c0f17 0%, #151925 100%);
+    color: #e6e9f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name p{
+    background: linear-gradient(90deg, #F4F6F8, #2563EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 30px;
+}
+.navbar nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.home{
+    margin: 40px;
+}
+.wholeHome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.homeWriting h1{
+    background: linear-gradient(90deg, #F4F6F8, #2563EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+.web{
+    color: #2563EB;
+}
+.des{
+    font-size: 30px;
+    font-weight: 500;
+}
+.brief{
+    font-size: 20px;
+    color: #111827;
+}
+.imaging img{
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    border: 10px solid #2563EB;
+}
+button{
+    border: none;
+    background: #2563EB;
+    border-radius: 40px;
+    padding: 20px;
+}
+button a{
+    text-decoration: none;
+    color: #111827;
+    font-size: 20px;
+}
