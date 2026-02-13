@@ -1,52 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <section class="header">
-        <div class="container">
-            <div class="name">
-                <p> </> Linkon Tuhoto</p>
-            </div>
-            <div class="navbar">
-                <nav>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Portfolio — Linkon Tuhoto</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="logo" href="#">Linkon Tuhoto</a>
+
+                <input type="checkbox" id="nav-toggle" class="nav-checkbox" />
+                <label for="nav-toggle" class="nav-button" aria-hidden>☰</label>
+
+                <nav class="nav">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-        </div>
-    </section>
-    <section class="home" id="homes">
-        <div class="wholeHome">
-        <div class="homeWriting">
-            <h1>Linkon Tuhoto</h1>
-            <p class="des">Senior <span class="web"> Web Developer to be</span></p>
-            <p class="brief">
-                I'm a motivated Web Development learner with 1 month of hands<br>
-                on experience building responsive websites using HTML, CSS.<br>
-                I enjoy turning ideas into clean, user-friendly interfaces and<br>
-                continuously improving my skills through real-world projects<br>
-                and daily practice.
-            </p>
-            <div class="contactButton">
-                <button><a href="#"> </> View Projects</a></button>
-                <button><a href="#">Contact Me</a></button>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container hero-inner">
+                    <div class="hero-text">
+                        <h1>Hi — I'm Linkon</h1>
+                        <p class="lead">I build simple, responsive websites using HTML & CSS.</p>
+                        <p>
+                            I'm a front-end enthusiast focused on clear interfaces and
+                            accessible design. I enjoy turning ideas into fast, maintainable
+                            web pages.
+                        </p>
+                        <p class="hero-actions">
+                            <a class="btn" href="#contact">Work with me</a>
+                            <a class="btn ghost" href="#projects">See projects</a>
+                        </p>
+                    </div>
+                    <div class="hero-image" aria-hidden>
+                        <img src="itzme.jpeg" alt="Linkon Tuhoto" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about container">
+                <h2>About</h2>
+                <p>
+                    I'm learning web development and building responsive interfaces with
+                    semantic HTML and clean CSS. I focus on usability, performance and
+                    simplicity.
+                </p>
+                <ul class="about-meta">
+                    <li><strong>Location:</strong> Meru, Kenya</li>
+                    <li><strong>Availability:</strong> Open to opportunities</li>
+                    <li><strong>Skills:</strong> HTML, CSS, Responsive Design</li>
+                </ul>
+            </section>
+
+            <section id="services" class="services">
+                <div class="container">
+                    <h2>Services</h2>
+                    <div class="services-grid">
+                        <article class="card">
+                            <h3>Responsive Design</h3>
+                            <p>Create layouts that work beautifully on any device.</p>
+                        </article>
+                        <article class="card">
+                            <h3>Static Sites</h3>
+                            <p>Fast, accessible sites built with semantic HTML & CSS only.</p>
+                        </article>
+                        <article class="card">
+                            <h3>Design Polish</h3>
+                            <p>Improve typography, spacing and visual hierarchy for clarity.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects container">
+                <h2>Projects</h2>
+                <p>Small selection of demos and practice projects (click to open).</p>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <a href="#" aria-label="Project 1">
+                            <img src="itzme.jpeg" alt="Project 1 screenshot" />
+                            <h4>Project One</h4>
+                            <p>Responsive landing page built with semantic HTML and CSS.</p>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="#" aria-label="Project 2">
+                            <img src="itzme.jpeg" alt="Project 2 screenshot" />
+                            <h4>Project Two</h4>
+                            <p>Small static site for booking cars.</p>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="#" aria-label="Project 3">
+                            <img src="itzme.jpeg" alt="Project 3 screenshot" />
+                            <h4>Project Three</h4>
+                            <p>A simple HTML , CSS hotel-website.</p>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="contact container">
+                <h2>Contact</h2>
+                <p>If you'd like to work together, send a message below or use the mail link.</p>
+
+                <form class="contact-form" action="mailto:linkonngere@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required />
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="john@gmail.com" required />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Let's talk about your project!" required></textarea>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Send message</button>
+                        <a class="btn ghost" href="mailto:linkonngere@gmail.com">Or email me</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2026 Linkon Tuhoto</p>
             </div>
-        </div>
-        <div class="imaging">
-            <img src="itzme.jpeg" alt="person">
-        </div>
-        </div>
-    </section>
-    
-</body>
+        </footer>
+    </body>
 </html>
