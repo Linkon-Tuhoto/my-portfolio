@@ -36,6 +36,10 @@ body{
     background:rgba(248,250,252,0.96);
     border-bottom:1px solid rgba(203,213,225,0.5);
     backdrop-filter: blur(12px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .header-inner{
     display:flex;
